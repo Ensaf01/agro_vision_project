@@ -415,13 +415,14 @@ export default function FarmerCropPage() {
               </div>
             );
           })}
-  {/* Deal Done Popup */}
+  {/* Deal Done */}
   {dealPopup && (
     <div className="popup">
       <h3>🎉 Congratulations! Deal Done</h3>
       <p>Dealer <strong>{dealPopup.request.dealer_name || dealPopup.request.dealer_id}</strong> will buy <strong>{dealPopup.request.requested_quantity} {dealPopup.request.unit}</strong> of <strong>{dealPopup.crop.name}</strong> at <strong>{dealPopup.request.bid_price} Tk</strong>.</p>
       <button onClick={() => {
-        // Generate PDF
+        // Generate PDF here for the deal
+          // Generate PDF here for the deal
         const doc = new jsPDF();
         doc.setFontSize(18);
         doc.text('AgroVision Deal Confirmation', 20, 20);
