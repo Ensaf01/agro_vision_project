@@ -415,7 +415,7 @@ export default function FarmerCropPage() {
               </div>
             );
           })}
-  {/* Deal Done Popup */}
+  {/* Deal Done */}
   {dealPopup && (
     <div className="popup">
       <h3>🎉 Congratulations! Deal Done</h3>
